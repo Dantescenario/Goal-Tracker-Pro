@@ -35,16 +35,28 @@ cd "GOAL TRACKER PRO"
 npm install
 ```
 
+Now you're ready to start! See the Development section below.
+
 ## Development
 
-Start the development server:
+### Quick Start (Easiest Method)
+
+Simply **double-click `start.bat`** in the project folder:
+- The dev server will start automatically
+- Wait 2-3 seconds for the server to be ready
+- Open http://localhost:3000 in your browser
+- Your app is ready to use!
+
+Press `Ctrl+C` in the terminal window to stop the server.
+
+### Manual Start
+
+If you prefer to start the dev server manually, run:
 ```bash
 npm run dev
 ```
 
-The application will open automatically at `http://localhost:3000/`
-
-The dev server includes hot module replacement (HMR), so changes to your code will reflect instantly in the browser.
+The application will start on `http://localhost:3000/` with hot module replacement (HMR) enabled, so changes to your code will reflect instantly in the browser.
 
 ## Build for Production
 
@@ -131,11 +143,14 @@ GOAL TRACKER PRO/
 │   ├── App.jsx            # Main component
 │   └── index.css          # Global styles
 ├── index.html             # HTML entry point
+├── start.bat              # Quick start script (double-click to run)
+├── start.ps1              # PowerShell start script (alternative)
 ├── package.json           # Dependencies and scripts
 ├── vite.config.js         # Vite configuration
 ├── tailwind.config.js     # Tailwind configuration
 ├── postcss.config.js      # PostCSS configuration
-└── README.md              # This file
+├── README.md              # This file
+└── .gitignore             # Git ignore file
 ```
 
 ## Tips for Best Results
